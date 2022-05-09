@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".TrustedContactsList">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        app:headerLayout="@layout/header"
+        android:background="@color/white"
+        app:itemTextColor="#000000"
+        app:menu="@menu/main_menu" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TrustedContactsList">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#00008577"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+        <ListView
+            android:id="@+id/myfriendphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dd"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"/>
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/myfriendphone"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:layout_height="wrap_content"
+            android:text="Tap on any of the contacts to update/delete it"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

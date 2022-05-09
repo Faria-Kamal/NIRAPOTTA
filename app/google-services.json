@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "466036567382",
+    "firebase_url": "https://nirapotta-ced51-default-rtdb.firebaseio.com",
+    "project_id": "nirapotta-ced51",
+    "storage_bucket": "nirapotta-ced51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466036567382:android:b9e5aba740eb40459bbaf7",
+        "android_client_info": {
+          "package_name": "com.example.nirapotta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466036567382-52ur30r5ksie3qfem59dg71p3vscb0gh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nirapotta",
+            "certificate_hash": "62a62af11e19deb577ddc0d49a931569971f227f"
+          }
+        },
+        {
+          "client_id": "466036567382-nfk2ha1pa1kim91b2ded5n3ak4pe4seh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxSssqRUUrb8EHZdYhfsf1xZgNDqoduiQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466036567382-nfk2ha1pa1kim91b2ded5n3ak4pe4seh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

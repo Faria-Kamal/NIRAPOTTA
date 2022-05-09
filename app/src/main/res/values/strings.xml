@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">NIRAPOTTA</string>
+    <string name="email_validate">[a-zA-Z0-9._-]+@[a-z]+.+[a-z]+</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="registration">1. Registration</string>
+    <string name="registrationdet">Firstly, the user needs to register an account in order to use this application. In order to do so, he must provide the necessary details in the registration window correctly. The user must carefully enter the phone number, firstly by selecting the country code and then entering the number. The password should be a combination of letters and symbols. Finally, by pressing "Register" he will be taken for OTP verification</string>
+    <string name="otp">2. OTP Verification</string>
+    <string name="otpdet">The user will receive an OTP code, which the device will automatically fetch from messages. MAke sure the internet connection is active.</string>
+    <string name="login">3. Login</string>
+    <string name="logindet">The user needs to provide Username and password correctly in order to enter the dashboard.</string>
+    <string name="dashboardadd">4. Adding Numbers</string>
+    <string name="dashboardadddet">The user needs to select Add contacts option from the Navigation bar. Next, he/she needs to enter the name and phone number of trusted contacts. If he / she wishes to change it or delete the certain contact, he/she can simply click on Show contacts and select the number from the list.</string>
+    <string name="permission">5. Required Device Permissions</string>
+    <string name="permissiondet">The user needs to allow SMS and location permission to this application. The GPS and internet must stay active to track the exact location of the user.</string>
+    <string name="dashboardsos">6. Sending Alert Messages</string>
+    <string name="dashboardsosdet">The user needs to tap the button in the dashboard region for 3 times to send the SOS Alert Message or simply shake the device 3 times heavily.</string>
+</resources>

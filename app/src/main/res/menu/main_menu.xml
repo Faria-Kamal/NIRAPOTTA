@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/ic_baseline_contacts"
+            android:title="Add Contacts" />
+
+
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_baseline_camera"
+            android:title="Power Camera" />
+
+
+    </group>
+    <group>
+
+        <item
+            android:id="@+id/nav_About"
+            android:icon="@drawable/ic_baseline_feedback"
+            android:title="About" />
+    </group>
+
+    <item android:title="Profile">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/ic_baseline_profile_24"
+                    android:title="Profile" />
+
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+
+        <menu>
+
+            <group>
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_baseline_arrow_back"
+                    android:title="Logout" />
+
+            </group>
+        </menu>
+
+    </item>
+</menu>

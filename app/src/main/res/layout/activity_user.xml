@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/cyan"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_face_24" />
+
+            <TextView
+                android:id="@+id/fullname_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/profile_image"
+                android:fontFamily="@font/lobster"
+                android:includeFontPadding="false"
+                android:text="Fariha Anjum"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/username_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullname_field"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/profile_image"
+                android:includeFontPadding="false"
+                android:text="fariha_anjum"
+                android:textColor="#FFF"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-100dp"
+            android:layout_width="match_parent"
+            android:padding="20dp">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                app:cardBackgroundColor="@color/cyan"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="30dp"
+                        android:layout_width="30dp"
+                        android:src="@drawable/ic_baseline_location_on_24" />
+
+                    <TextView
+                        android:fontFamily="@font/lobster"
+                        android:id="@+id/booking_label"
+                        android:includeFontPadding="false"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Current Location"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/address_desc"
+                        android:layout_marginTop="10dp"
+                        android:includeFontPadding="false"
+                        android:layout_below="@id/booking_label"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/lobster"
+                        android:textAlignment="center"
+                        android:text="Address"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="Full Name"
+                android:id="@+id/full_name_profile"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/bungee"
+                    android:text="Fariha Anjum" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email_profile"
+                android:hint="E-Mail"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                    android:drawablePadding="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="fariha.anjum97@gmail.com"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phone_no_profile"
+                android:hint="Phone Number"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:drawableLeft="@drawable/ic_baseline_add_ic_call_24"
+                    android:drawablePadding="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="01511749888"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_profile"
+                android:hint="Password"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:drawableLeft="@drawable/ic_baseline_dialpad_24"
+                    android:drawablePadding="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="F123456"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/dashboardbtn"
+                android:background="@color/cyan"
+                android:fontFamily="@font/bungee"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:text="View Dashboard" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
